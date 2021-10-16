@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCyack</title>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap5 css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- ESTILOS css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <!-- bootstrap 4 menu -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-dark py-3 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/logo_yack.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2 text-warning">PC_yack</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart text-warning"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart text-warning"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search text-warning"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon btn btn-light"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#inicio">inicio</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#marcas">marcas</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#novedades">novedades</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#noticias">noticias</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "#quien">quien soy</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-white" href = "#Laptops">Laptops</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin navbar -->
+
+    <!-- inicio -->
+    <header id = "inicio" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">las mejores marcas </h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">pc gamer</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">Compra ahora</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">mejores precios </h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">PC STUDIO</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">COMPRA AHORA</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#inicio" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#inicio" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- fin inicio -->
+
+    <!-- marcas -->
+    <section id = "marcas" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">MARCAS DESTACADAS</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">Todo</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">RAZER</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Logitech</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">REDRAGON</button>
+                </div>
+
+                <div class = "marcas-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/razer_teclado.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">AUDIO</p>
+                            <span class = "fw-bold">Bs 700.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/logi_teclado.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">TECLADO</p>
+                            <span class = "fw-bold">Bs 800.45</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/red_teclado.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">teclado</p>
+                            <span class = "fw-bold">Bs 245.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/razer_mouse.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">MOUSE</p>
+                            <span class = "fw-bold">Bs 300.20</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/logi_camara.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">CAMARA WEB</p>
+                            <span class = "fw-bold">Bs 480.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/red_micro.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">microfono</p>
+                            <span class = "fw-bold">Bs 105.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/razer_audio.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">TECLADO</p>
+                            <span class = "fw-bold">Bs 1025.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "marcas-img position-relative">
+                            <img src = "images/logi_mouse.png" class = "w-100">
+                            <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">venta</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-danger"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                                <span class = "text-muted"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">MOUSE</p>
+                            <span class = "fw-bold">Bs 500.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin marcas -->
+
+    <!-- novedades  -->
+    <section id = "novedades" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">SUPER NOVEDADES </h2>
+            </div>
+
+            <div class = "novedades-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "novedades-img position-relative overflow-hidden">
+                        <img src = "images/novedades_product_1.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">procesadores</p>
+                        <span class = "fw-bold d-block">Bs 3080.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">detalles</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "novedades-img position-relative overflow-hidden">
+                        <img src = "images/novedades_product_2.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">tarjetas de video</p>
+                        <span class = "fw-bold d-block">Bs 10600</span>
+                        <a href = "#" class = "btn btn-primary mt-3">detalles</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "novedades-img position-relative overflow-hidden">
+                        <img src = "images/novedades_product_3.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">gabinetes</p>
+                        <span class = "fw-bold d-block">Bs 400.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">detalles</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "novedades-img position-relative overflow-hidden">
+                        <img src = "images/novedades_product_4.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">memorias</p>
+                        <span class = "fw-bold d-block">Bs 1345</span>
+                        <a href = "#" class = "btn btn-primary mt-3">detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- final novedades -->
+
+    <!-- banner publicitario -->
+    <section id = "public" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "publi-content">
+                    <span class = "text-white">Descuento hasta 40%</span>
+                    <h2 class = "mt-2 mb-4 text-white">Super Oferta!!</h2>
+                    <a href = "#" class = "btn">COMPRA AHORA</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+                <!-- fin bannerpublicitario -->
+
+    <!-- noticias -->
+    <section id = "noticias" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Noticias Tecnologicas</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/not_1.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Tendrás que ahorrar para las nuevas CPU Intel Gen 12, mira sus precios</h4>
+                        <p class = "card-text mt-3 text-muted">No hay duda que si AMD tuvo el lanzamiento de las pasadas Navidades con sus Ryzen 5000 el turno ahora en 2021 es para Intel y sus Core de decimosegunda generación basados en la arquitectura Alder Lake. Por lo que pronto los tendremos en nuestras manos, aunque claro está todavía desconocemos el precio de estas nuevas CPU, ¿o no?. ¿Cuáles serán los precios de los primeros Intel Core Gen 12?</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Autor: </span>Diego De Granda
+
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Leer más</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/not_2.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Ya puedes comprar tu licencia vitalicia de Windows 11</h4>
+                        <p class = "card-text mt-3 text-muted">Windows 11 ya está por fin disponible, y viene cargado de novedades incluyendo optimizaciones para juegos y para los próximos procesadores Intel Alder Lake. Además de poder actualizar gratis si tienes una licencia original de Windows 10, ahora por fin tenemos también la posibilidad de comprar directamente una licencia de Windows 11. A continuación te contamos cómo hacerlo .</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Autor: </span>Sergio Saez Arriaga
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Leer más</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/not_3.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">NVIDIA lanzará otra GPU RTX con 12 GB de memoria VRAM, ¿será SUPER?</h4>
+                        <p class = "card-text mt-3 text-muted">Los rumores de nuevos modelos de la gama RTX 30 no deberían sorprendernos, más ahora cuando sabemos que NVIDIA prepara la variante SUPER de sus GeForce Ampere como apuesta en el primer semestre del año que viene y como previa al lanzamiento de su siguiente generación de tarjetas gráficas con arquitectura ADA. ¿El último rumor? Una RTX 3080 de 12 GB de VRAM.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Autor: </span>Paola Camacho Alapizco
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin noticias -->
+
+    <!-- QUIEN SOY -->
+    <section id = "quien" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">QUIEN SOY</h2>
+                    </div>
+                    <p class = "lead text-muted">Estudiante de Igenieria de Sistemas en la Universidad Boliviana de Informatica.</p>
+                    <p>yacel victor es un apasionado de la tecnologia de desarrollo web y movil.  posee habilidades de Diseño digital y edicion profesional de video</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/quien_us.png" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin quien soy -->
+
+    <!-- Laptops -->
+    <section id = "Laptops" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Laptops de temporada</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">los más valorados</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop_1.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0"> HP SPECTRE X360 14</p>
+                            <span>Bs 8020.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop_2.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">ASUS ROG ZEPHYRUS G15</p>
+                            <span>Bs 9470.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop_3.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0"> LG GRAM 17</p>
+                            <span>Bs 8450.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">los más vendidos</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop_4.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Acer ENDURO Urban N3</p>
+                            <span>Bs 4500.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop-5.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0"> Lenovo V330</p>
+                            <span>Bs 5200.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/laptop-6.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">MSI Modern 15 A10M-455</p>
+                            <span>Bs 6800.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">novedades</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/on_sale_1.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Razer Blade 15</p>
+                            <span>Bs 16.200.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/on_sale_2.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">ROG Zephyrus Duo 15 SE</p>
+                            <span>Bs 15.300.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "images/on_sale_3.png" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">MacBook Pro M1</p>
+                            <span>Bs 16.700.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin Laptops -->
+
+    <!-- correo -->
+    <section id = "correo" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Boletín de suscripción</h2>
+                </div>
+
+                <p class = "text-center text-muted">Desea recibir cotizaciones y noticias sobre tecnologia dejamos tu correo.</p>
+
+
+                  
+                <div class="input-group mb-2 mt-1">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+                  </div>
+
+                  <div class="input-group mb-2 mt-1">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="tu consulta" rows="3"></textarea>
+                  </div>
+
+           
+
+                <div class = "input-group mb-2 mt-3">
+                    <input type = "mail" class = "form-control" placeholder="escribe tu correo ...">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin correo -->
+
+ 
+   <!-- mapa -->
+   <section  class = "py-5">
+
+    <div class = "title text-center pt-3 pb-5">
+        <h2 class = "position-relative d-inline-block ms-4">Nuestra Direccion</h2>
+    </div>
+
+    <div class="text-center">
+ 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegular">Mapa regular</button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalSatellite">Mapa Satelital</button>
+        
+    </div>
+
+
+      
+      <!--Modal: uno-->
+      <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+      
+          <!--Content-->
+          <div class="modal-content">
+      
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+      
+              <!--Google map-->
+              <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+                <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+      
+            </div>
+      
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">CERRAR <i class="fas fa-times ml-1"></i></button>
+      
+            </div>
+      
+          </div>
+          <!--/.Content-->
+      
+        </div>
+      </div>
+      <!--Modal: uno-->
+      
+      <!--Modal: dos-->
+      <div class="modal fade" id="modalSatellite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+      
+          <!--Content-->
+          <div class="modal-content">
+      
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+      
+              <!--Google map-->
+              <div id="map-container-google-17" class="z-depth-1-half map-container-10" style="height: 400px">
+                <iframe src="https://maps.google.com/maps?q=new%20york&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+      
+            </div>
+      
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-outline-default btn-md" data-dismiss="modal">CERRAR <i class="fas fa-times ml-1"></i></button>
+      
+            </div>
+      
+          </div>
+          <!--/.Content-->
+      
+        </div>
+      </div>
+      <!--Modal: dos-->
+    </section>
+
+<!-- fin mapa -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">PC_yack</a>
+                    <p class = "text-white text-muted mt-3">venta de computadoras y servicio especializado de mantenimiento tanto de software como hardware, precios razonables y garantia absoluta</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Inicio
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Marcas
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Noticias
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Quien soy </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contactos</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            calle 5  z. Pampahasi ciudad de La Paz.
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            pcyack.suporte@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +591 788 850 54
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Redes Sociales</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                            
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+
+     <!-- jQuery PARA Bootstrap 4 JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
